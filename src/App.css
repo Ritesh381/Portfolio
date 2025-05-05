@@ -1,0 +1,35 @@
+/* Default Light Mode */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+}
+
+/* Dark Mode Variables */
+body.bg-dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #0d6efd;
+  --secondary-color: #adb5bd;
+}
+
+/* Apply these variables to your components globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1, p, a {
+  color: var(--text-color);
+}
+
+/* You can also style specific elements like buttons */
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
