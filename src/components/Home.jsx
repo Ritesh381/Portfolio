@@ -30,9 +30,9 @@ function Home() {
               />
             </div>
           </div>
-          <h1 className="display-4 fw-bold">Ritesh Prajapati</h1>
-          <p className={`lead ${darkMode ? "text-info" : ""}`}>
-            Passionate Developer, Loves building projects
+          <h1 className="display-4 fw-bold ">Ritesh Prajapati</h1>
+          <p className={`lead w-100 ${darkMode ? "text-info" : ""}`}>
+            Frontend Developer | Loves building projects | Content creator | Constant learner
           </p>
           <hr className="my-4 mx-auto w-50" />
         </div>
@@ -116,7 +116,7 @@ function Home() {
               </p>
 
               <div className="row g-4">
-                {[1, 2, 3, 4].map((id) => (
+                {[1, 2, 3, 4, 5, 6].map((id) => (
                   <div key={id} className="col-md-6 mb-4">
                     <div className="project-card-wrapper">
                       <ProjectCard ProjID={id} darkMode={darkMode} />
