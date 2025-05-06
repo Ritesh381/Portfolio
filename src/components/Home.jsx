@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ProjectCard from "./ProjectCard";
-import Footer from "./Footer";
+import Me from "../assets/me.jpg"
 import { ModeContext } from "./ModeContext";
 
 function Home() {
@@ -24,7 +24,7 @@ function Home() {
               style={{ width: "250px", height: "250px" }}
             >
               <img
-                src="src/assets/me.jpg"
+                src={Me}
                 alt="Ritesh Prajapati"
                 className="w-100 h-100 object-fit-cover"
               />
