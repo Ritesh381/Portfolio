@@ -6,9 +6,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Dummy Pages (lazy-loaded)
 const Home = lazy(() => import("./components/Home"));
-const About = lazy(() => import("./components/About"));
-const Projects = lazy(() => import("./components/Projects"));
-const Skills = lazy(() => import("./components/Skills"));
 const Contact = lazy(() => import("./components/Contact"));
 const Resume = lazy(()=>import("./components/Resume"));
 

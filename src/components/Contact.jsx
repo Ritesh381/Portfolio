@@ -1,8 +1,10 @@
 import React, { useContext, useState } from "react";
 import { ModeContext } from "./ModeContext";
+import { useNavigate } from 'react-router-dom';
 import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const navigate = useNavigate();
   const { darkMode } = useContext(ModeContext);
   const [formData, setFormData] = useState({
     name: "",
@@ -23,8 +25,8 @@ function Contact() {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           phone: formData.phone || "N/A",
           message: formData.message,
           to_email: "prajapatiritesh381@gmail.com",
@@ -34,6 +36,7 @@ function Contact() {
       .then(() => {
         alert("Mail sent successfully!");
         setFormData({ name: "", phone: "", email: "", message: "" });
+        navigate("/");
       })
       .catch((error) => {
         console.error("Email send error:", error);
