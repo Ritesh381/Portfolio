@@ -162,16 +162,7 @@ function Home() {
                   >
                     <h5 className="fw-bold">Programming Languages</h5>
                     <div className="d-flex flex-wrap justify-content-center gap-2 mt-3">
-                      {["Python", "Java", "JavaScript", "C++"].map((lang) => (
-                        <span
-                          key={lang}
-                          className={`badge ${
-                            darkMode ? "bg-info" : "bg-primary"
-                          } fs-6 p-2`}
-                        >
-                          {lang}
-                        </span>
-                      ))}
+                      Python, C++, Java, JavaScript
                     </div>
                   </div>
                 </div>
@@ -222,6 +213,30 @@ function Home() {
                     <p className="mb-0">OOPS in Java and Python</p>
                   </div>
                 </div>
+                <div className="col-md-6">
+                  <div
+                    className={`skill-card p-3 rounded text-center h-100 ${
+                      darkMode
+                        ? "bg-dark-subtle text-light"
+                        : "bg-light text-dark"
+                    }`}
+                  >
+                    <h5 className="fw-bold">Simple Query Langage</h5>
+                    <p className="mb-0">MySQL</p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div
+                    className={`skill-card p-3 rounded text-center h-100 ${
+                      darkMode
+                        ? "bg-dark-subtle text-light"
+                        : "bg-light text-dark"
+                    }`}
+                  >
+                    <h5 className="fw-bold">Video Editing</h5>
+                    <p className="mb-0">Wondershare Filmora</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -229,7 +244,7 @@ function Home() {
       </div>
 
       {/* Education Section */}
-      <div className="row justify-content-center mb-5" id="">
+      <div id="education" className="row justify-content-center mb-5">
         <div className="col-md-10">
           <div
             className={`card elevated-card ${
@@ -292,7 +307,7 @@ function Home() {
       </div>
 
       {/* Hobbies Section */}
-      <div className="row justify-content-center mb-5">
+      <div id="hobbies" className="row justify-content-center mb-5">
         <div className="col-md-10">
           <div
             className={`card elevated-card ${
@@ -320,6 +335,9 @@ function Home() {
                   "Badminton",
                   "Gym",
                   "Reading (sometimes)",
+                  "Casual Video games",
+                  "Chess",
+                  "Cycling"
                 ].map((hobby, index) => (
                   <div key={index} className="col">
                     <div
@@ -411,7 +429,6 @@ function Home() {
                 : "rgba(13,110,253,0), rgba(13,110,253,1), rgba(13,110,253,0)"
             });
           transform: translateX(-50%);
-          border-radius: 3px;
         }
         
         /* Timeline styling */

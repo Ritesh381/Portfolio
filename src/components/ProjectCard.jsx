@@ -28,7 +28,7 @@ console.log(project.demo.length)
           <a
             href={project.demo || '#'}
             className={`text-decoration-none ${darkMode ? 'text-info' : 'text-primary'}`}
-            target="_blank"
+            target={project.demo.length > 0 ? "_blank" : ""}
             rel="noopener noreferrer"
           >
             {project.name}
