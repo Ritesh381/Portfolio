@@ -32,7 +32,7 @@ function Home() {
           </div>
           <h1 className="display-4 fw-bold ">Ritesh Prajapati</h1>
           <p className={`lead w-100 ${darkMode ? "text-info" : ""}`}>
-            Frontend Developer | Loves building projects | Content creator | Constant learner
+            Full Stack Developer | Loves building projects | Content creator | Constant learner
           </p>
           <hr className="my-4 mx-auto w-50" />
         </div>
